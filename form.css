@@ -1,212 +1,202 @@
 body {
-    background-image: url('bg.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    color: white;
-    font-size: 2em;
-    margin: 0;
-    font-family: Arial, sans-serif;
+  background-image: url("bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+  font-size: 2em;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
 }
 
-
 .nav-content {
-    display: flex;     
-    justify-content: space-evenly;  
-    padding: 1em;             
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1em;
 }
 
 .nav-content a {
-    color: white;
-    font-size: 0.7em;
-    text-decoration: none;
-    font-family: Arial, sans-serif;
-    padding: 0.5em 1em;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.15s ease;
-    white-space: nowrap; 
+  color: white;
+  font-size: 0.7em;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.15s ease;
+  white-space: nowrap;
 }
 
 .nav-content a:hover {
-    background-color: rgba(176, 109, 0, 0.545);
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(6px);
+  background-color: rgba(176, 109, 0, 0.545);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(6px);
 }
 
-
-
-
-
-
-
-.sign-up-content input, button, a {
-    margin-bottom: 20px;
+.sign-up-content input,
+button,
+a {
+  margin-bottom: 20px;
 }
 
 .to-center {
-    display: flex;
-    justify-content: center;
-    position: relative;
-
-
+  display: flex;
+  justify-content: center;
+  position: relative;
 }
 
 .sign-up {
-    border-radius: 20px;
-    margin-top: 0px;
-   padding: 50px;
-    display: inline-block;
-    box-sizing: border-box;
-    background: rgba(207, 159, 71, 0.077); 
-    backdrop-filter: blur(10px);          
-    border: 1px solid rgba(255, 255, 255, 0.163);
-
-
+  border-radius: 20px;
+  margin-top: 0px;
+  padding: 50px;
+  display: inline-block;
+  box-sizing: border-box;
+  background: rgba(207, 159, 71, 0.077);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.163);
 }
 
 h2 {
-    text-align: center;
-    font-family:sans-serif;
-    color: rgb(249, 228, 206);
+  text-align: center;
+  font-family: sans-serif;
+  color: rgb(249, 228, 206);
 }
-
 
 .sign-up-content input {
-    display: block;
-    
+  display: block;
 }
-
 
 .info {
-    font-size: 0.70em;
-    border-radius: 2px;
-    backdrop-filter: blur (10px);
-    -webkit-backdrop-filter: blur(10px);
-    background-color: rgba(101, 53, 11, 0.621);
-    cursor: pointer;
+  font-size: 0.7em;
+  border-radius: 2px;
+  backdrop-filter: blur (10px);
+  -webkit-backdrop-filter: blur(10px);
+  background-color: rgba(101, 53, 11, 0.621);
+  cursor: pointer;
 }
 
-
 button {
-    display: block;
-    justify-self: center;
-    font-size: 0.70em;
-    background-color: rgba(92, 62, 4, 0.703);
-    border: none;
-    backdrop-filter: blur (10px);
-    -webkit-backdrop-filter: blur(10px);
-    color: aliceblue;
-    border-radius: 20px;
-    padding: 10px;
-    transition: 0.20s;
+  display: block;
+  justify-self: center;
+  font-size: 0.7em;
+  background-color: rgba(92, 62, 4, 0.703);
+  border: none;
+  backdrop-filter: blur (10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: aliceblue;
+  border-radius: 20px;
+  padding: 10px;
+  transition: 0.2s;
 
-    cursor: pointer;
+  cursor: pointer;
 }
 
 button:hover {
-    opacity: 0.80;
+  opacity: 0.8;
 }
 
 button:active {
-    transform: scale(1.1);
-} 
+  transform: scale(1.1);
+}
 
 .account {
-    font-size: 0.70em;
-    display: block;
-    justify-self: center;
-    color: rgb(0, 0, 0);
-    cursor: pointer;
-    font-weight: bolder;
+  font-size: 0.7em;
+  display: block;
+  justify-self: center;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  font-weight: bolder;
 }
 
 input {
-    color: aliceblue;
+  color: aliceblue;
 }
 
 .account:hover {
-    color: blue;
-}  
+  color: blue;
+}
 
 .account:active {
-    color: rgb(1, 6, 10);
+  color: rgb(1, 6, 10);
 }
 
 input::placeholder {
-    color: white;
-    opacity: 0.80;
+  color: white;
+  opacity: 0.8;
 }
 
 header {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
 }
 .nav-content {
-    gap: 4em ;
+  gap: 4em;
 }
 
 @media (max-width: 500px) {
-    
+  .nav-content {
+    gap: 0;
+    font-size: 0.7em;
+  }
+  body {
+    overflow: hidden;
+  }
 
-.nav-content {
-     gap: 0;
-     font-size: 0.70em;
-}
+  h2 {
+    font-size: 1em;
+  }
 
-    h2 {
-        font-size: 1em;
-    }
+  form {
+    width: 7em;
+    height: 10em;
+  }
+  .info {
+    width: 10em;
+  }
+  .info::placeholder {
+    font-size: 0.8em;
+  }
+  .account {
+    font-size: 0.5em;
+  }
 
-    form {
-        width: 7em;
-        height: 10em;
-    }
-    .info {
-        width: 10em;
-    }
-    .info::placeholder {
-        font-size: 0.80em;
-    }
-    .account {
-        font-size: 0.50em;
-    }
-
-    button {
-        font-size: 0.50em;
-    }
+  button {
+    font-size: 0.5em;
+  }
 }
 
 @media (min-width: 501px) and (max-width: 1200px) {
-    
+  .nav-content {
+    gap: 1em;
+    font-size: 0.9em;
+  }
 
-.nav-content {
-     gap: 1em;
-     font-size: 0.90em;
+  h2 {
+    font-size: 1em;
+  }
+
+  body {
+    overflow: hidden;
+  }
+
+  form {
+    width: 7em;
+    height: 10em;
+  }
+  .info {
+    width: 10em;
+  }
+  .info::placeholder {
+    font-size: 0.8em;
+  }
+  .account {
+    font-size: 0.5em;
+  }
+
+  button {
+    font-size: 0.5em;
+  }
 }
-
-    h2 {
-        font-size: 1em;
-    }
-
-    form {
-        width: 7em;
-        height: 10em;
-    }
-    .info {
-        width: 10em;
-    }
-    .info::placeholder {
-        font-size: 0.80em;
-    }
-    .account {
-        font-size: 0.50em;
-    }
-
-    button {
-        font-size: 0.50em;
-    }
-}
-
